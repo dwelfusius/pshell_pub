@@ -1,0 +1,20 @@
+﻿$results = @()
+$results += Get-ActiveSyncVirtualDirectory          |select * 
+$results += Get-AutodiscoverVirtualDirectory     |select *
+$results += Get-EcpVirtualDirectory            |select *
+$results += Get-MapiVirtualDirectory         |select *
+$results += Get-OabVirtualDirectory        |select *
+$results += Get-OwaVirtualDirectory         |select *
+$results += Get-PowerShellVirtualDirectory     |select *
+$results += Get-WebServicesVirtualDirectory    |select *
+$results += Get-WebVirtualDirectory             |select *
+$results += Get-ActiveSyncVirtualDirectory -ShowBackEndVirtualDirectories      |select * 
+$results += Get-AutodiscoverVirtualDirectory  -ShowBackEndVirtualDirectories   |select *
+$results += Get-EcpVirtualDirectory -ShowBackEndVirtualDirectories             |select *
+$results += Get-MapiVirtualDirectory  -ShowBackEndVirtualDirectories           |select *
+$results += Get-OabVirtualDirectory    -ShowBackEndVirtualDirectories          |select *
+$results += Get-OwaVirtualDirectory   -ShowBackEndVirtualDirectories           |select *
+$results += Get-PowerShellVirtualDirectory  -ShowBackEndVirtualDirectories     |select *
+$results += Get-WebServicesVirtualDirectory -ShowBackEndVirtualDirectories     |select *
+$results += Get-WebVirtualDirectory             |select *
+$results > N:\virtualdirectories.txt
