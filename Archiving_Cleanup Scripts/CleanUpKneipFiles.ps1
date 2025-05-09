@@ -1,0 +1,1 @@
+Remove-Item "\\DEGROOF.be\department\DPIAM\12. VALUE ADDED SERVICES\PUBLIC\SFTP-KNEIP\To_send_to_KNEIP\*.*" -Recurse  -Confirm:$false -Force

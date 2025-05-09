@@ -1,0 +1,1 @@
+Remove-Item "\\DEGROOF.be\department\DPIAM\IPM\06_Middle Office\Reporting\For BBG\*.*" -Recurse  -Confirm:$false -Force

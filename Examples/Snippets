@@ -1,0 +1,3 @@
+
+#Servername validation
+if (-not ($server|Select-String -Pattern '^s(\w{1,2}w|\w{1,2}l)\w+\d[atp]{1}$'  )){'not valid'}
